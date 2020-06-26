@@ -34,11 +34,11 @@ jobs:
 #        cmd: install
         
     - name: Creating build
-      run: npm build
+      run: npm run build
       
-    - name: installing surge
-      run: npm install -g surge
+    - name: Installing Surge
+      run: npm install --global surge
       
-    - name: deploying 
-      run:  surge./build http://http://leank.surge.sh/ --token${{secrets.Surge_Token}}
+    - name: Deploying 
+      run: surge ./build http://http://leank.surge.sh/ --token ${{secrets.Surge_Token}}
 
