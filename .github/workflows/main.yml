@@ -41,5 +41,5 @@ jobs:
       
   # Runs a single command using the runners shell
     - name: deploying 
-      run: surge ./build  http://http://inexpensive-react.surge.sh/ --token${{secrets.Surge_Token}}
+      run: surge ./build  http://http://leank.surge.sh/ --token${{secrets.Surge_Token}}
 
