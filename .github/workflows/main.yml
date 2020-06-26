@@ -39,7 +39,6 @@ jobs:
     - name: installing surge
       run: npm install -g surge
       
-  # Runs a single command using the runners shell
     - name: deploying 
       run: surge ./build  http://http://leank.surge.sh/ --token${{secrets.Surge_Token}}
 
